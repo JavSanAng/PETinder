@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const Pet = require('./petModel'); 
+const Pet = require('./Pet'); 
 
 const Post = sequelize.define('Post', {
   post_id: {
