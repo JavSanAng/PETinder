@@ -1,0 +1,59 @@
+/* src/App.css */
+
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Estilos para el contenedor de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor de home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e1e0c0;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #666666;
+}
