@@ -1,13 +1,12 @@
-/* src/App.css */
 
-/* Estilos globales */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
 
-/* Estilos para el contenedor de login */
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -38,7 +37,6 @@ body {
   cursor: pointer;
 }
 
-/* Estilos para el contenedor de home */
 .home-container {
   display: flex;
   flex-direction: column;

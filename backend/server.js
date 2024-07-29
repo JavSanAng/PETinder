@@ -6,6 +6,8 @@ const authMiddleware = require('./middlewares/authMiddleware');
 const userRoutes = require("./routes/userRoutes")
 const postRoutes = require("./routes/postRoutes")
 const petRoutes = require('./routes/petRoutes');
+const relationshipRoutes = require('./routes/relationshipRoutes');
+
 
 dotenv.config();
 
@@ -30,6 +32,7 @@ sequelize.authenticate()
 app.use('/user', userRoutes);
 app.use('/post', postRoutes);
 app.use('/pets', petRoutes);
+app.use('/relationship', relationshipRoutes);
 
 
 app.listen(PORT, () => {

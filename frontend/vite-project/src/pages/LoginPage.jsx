@@ -8,8 +8,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de autenticación
-    history.push('/home'); // Redirigir a la página de inicio
+    history.push('/home'); 
   };
 
   return (
