@@ -1,5 +1,5 @@
 const express = require('express');
-const { getRelationships, addRelationship, deleteRelationship } = require('../controllers/relationship');
+const { getRelationships, addRelationship, deleteRelationship } = require('../controllers/relationshipController');
 
 const router = express.Router();
 
