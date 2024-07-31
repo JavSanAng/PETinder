@@ -1,29 +1,27 @@
-import { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// import { AuthContext } from "./context/authContext";
+import { makeRequest } from "../../context/axios";
 import "./login.css";
 
 const Login = () => {
-  const [inputs, setInputs] = useState({
-    username: "",
-    password: "",
-  });
-  const [err, setErr] = useState(null);
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
-
-  const handleChange = (e) => {
-    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-//   const { login } = useContext(AuthContext);
-
-  const handleLogin = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await login(inputs);
-      navigate("/")
+      const response = await makeRequest.post("/auth/login", {
+        user_name: userName,
+        password: password,
+      });
+
+      console.log("Login successful:", response.data);
+      navigate("/"); 
     } catch (err) {
-      setErr(err.response.data);
+      setError("Login failed. Please try again.");
+      console.error("Login error:", err);
     }
   };
 
@@ -31,34 +29,38 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Hello PET!</h1>
+          <h1>Lama Social.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
             alias totam numquam ipsa exercitationem dignissimos, error nam,
             consequatur.
           </p>
-          <span>Don't you have an account?</span>
+          <span>Don't have an account?</span>
           <Link to="/register">
             <button>Register</button>
           </Link>
         </div>
         <div className="right">
           <h1>Login</h1>
-          <form>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="userName">Username:</label>
             <input
               type="text"
-              placeholder="Username"
-              name="username"
-              onChange={handleChange}
+              id="userName"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              required
             />
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
-              placeholder="Password"
-              name="password"
-              onChange={handleChange}
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
-            {err && err}
-            <button onClick={handleLogin}>Login</button>
+            {error && <p className="error">{error}</p>}
+            <button type="submit">Login</button>
           </form>
         </div>
       </div>
