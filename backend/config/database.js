@@ -12,9 +12,10 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     port: dbPort,
     dialect: 'postgres',
     dialectOptions: {
-        ssl: {
+        ssl: 
+        {
             require: true,
-            rejectUnauthorized: false // Esto es común para muchas configuraciones de PostgreSQL en la nube
+            rejectUnauthorized: false 
         }
     },
 });
