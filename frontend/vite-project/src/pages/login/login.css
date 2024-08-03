@@ -18,7 +18,9 @@
 .login .card .left {
   flex: 1;
   background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-    url("https://img.freepik.com/foto-gratis/retrato-lindo-perro-husky-siberiano-ojos-azules-[…]134e4da7af4a93763f041cbbaf210630d3725598ebf35d63af3a5a6&w=740")
+    url(
+      "https://img.freepik.com/foto-gratis/retrato-divertido-lindo-cachorro-perro-husky-siberiano-pie-contra-placa-plata-agua-o-comida-perrito-gracioso-ojos-azules-pelaje-gris-negro_7502-5602.jpg?t=st=1722709239~exp=1722712839~hmac=947aad2ecb802c85dbbf36867589f4c954d1d1ff2babb5672f7d883cc350b083&w=900"
+      )
       center;
   background-size: cover;
   padding: 50px;

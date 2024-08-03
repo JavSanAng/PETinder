@@ -1,0 +1,46 @@
+.navbar-icon {
+  color: white;
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #ff5f6d,
+    #ffc371,
+    #ff5f6d,
+    #00c9ff,
+    #92fe9d,
+    #f9d423,
+    #ff4e50,
+    #f9d423,
+    #ff5f6d,
+    #00c9ff,
+    #92fe9d,
+    #f9d423,
+    #ff4e50,
+    #ff5f6d
+  );
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 8px;
+}
+
+.navbar-link:hover {
+  color: #5947c3;
+}
