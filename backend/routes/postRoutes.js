@@ -1,7 +1,7 @@
+
 const express = require('express');
 const { getPosts, addPost, deletePost } = require('../controllers/postController');
 const authMiddleware = require('../middlewares/authMiddleware');
-
 const router = express.Router();
 
 router.get('/', authMiddleware, getPosts);

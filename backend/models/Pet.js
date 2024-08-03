@@ -35,7 +35,6 @@ const Pet = sequelize.define('Pet', {
   tableName: 'pet',
 });
 
-
 Pet.belongsTo(User, { foreignKey: 'user_id' });
 
 module.exports = Pet;

@@ -1,0 +1,22 @@
+.profile-container {
+    margin-top: 20px;
+}
+
+.profile-card {
+    padding: 20px;
+}
+
+.profile-avatar-large {
+    width: 100px;
+    height: 100px;
+}
+
+.pet-card {
+    text-align: center;
+}
+
+.pet-avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}

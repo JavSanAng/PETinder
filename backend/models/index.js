@@ -1,6 +1,7 @@
 const User = require('./User');
 const Relationship = require('./Relationship');
 
+
 User.belongsToMany(User, {
   through: Relationship,
   as: 'Followers',
