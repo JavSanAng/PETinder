@@ -29,7 +29,7 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>PETinder.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
             alias totam numquam ipsa exercitationem dignissimos, error nam,
@@ -43,7 +43,7 @@ const Register = () => {
         <div className="right">
           <h1>Register</h1>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="userName">Username:</label>
+            <label htmlFor="userName">Username</label>
             <input
               type="text"
               id="userName"
@@ -51,7 +51,7 @@ const Register = () => {
               onChange={(e) => setUserName(e.target.value)}
               required
             />
-            <label htmlFor="password">Password:</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"

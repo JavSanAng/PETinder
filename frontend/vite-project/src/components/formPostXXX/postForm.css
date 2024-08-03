@@ -1,0 +1,36 @@
+.create-post-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-textarea {
+    margin-bottom: 16px;
+}
+
+.form-error {
+    margin-bottom: 16px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-button {
+    padding: 10px 20px;
+}
