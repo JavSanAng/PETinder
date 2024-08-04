@@ -1,0 +1,55 @@
+
+.create-post-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.create-post-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.create-post-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-post-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.create-post-textfield {
+    margin-bottom: 20px;
+}
+
+.create-post-select {
+    margin-bottom: 20px;
+}
+
+.create-post-button {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+.create-post-button:hover {
+    background-color: #3700b3;
+}
+
+.create-post-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    align-self: center;
+}

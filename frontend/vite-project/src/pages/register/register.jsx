@@ -31,9 +31,7 @@ const Register = () => {
         <div className="left">
           <h1>PETinder.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          ¡Únete a Petinder hoy y descubre un mundo de amigos peludos! Conéctate, comparte y encuentra el compañero perfecto para ti.
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">

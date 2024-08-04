@@ -1,58 +1,66 @@
-# PETinder
+🐾 PETinder 🐾
 
-PETinder es una aplicación web para conectar a los dueños de perros y compartir publicaciones sobre sus mascotas. La aplicación permite a los usuarios registrarse, iniciar sesión, publicar contenido relacionado con sus perros, y gestionar solicitudes de amistad entre mascotas.
+¡Bienvenidos a PETinder! La red social definitiva para los amantes de las mascotas. Aquí puedes conectarte con otros pet lovers, compartir publicaciones sobre tus mascotas, y gestionar sus perfiles. ¡Vamos a hacer que esas colitas se muevan!
 
-## Características
+Contenidos
 
-- Registro e inicio de sesión de usuarios
-- Gestión de perfiles de perros
-- Publicaciones relacionadas con los perros
-- Solicitudes de amistad entre perros
-- Panel de usuario para gestionar contenido
+	•	Características
+	•	Tecnologías Usadas
+	•	Instalación
+	•	Frontend
+	•	Backend
+	•	Uso
+	•	Estructura del Proyecto
+	•	Frontend
+	•	Backend
+	•	Rutas de la API
+	•	Autenticación
+	•	Usuarios
+	•	Mascotas
+	•	Publicaciones
+	•	Contribuir
+	•	Licencia
+	•	Agradecimientos
 
-## Estructura del Proyecto
+Características
 
-El proyecto está dividido en dos partes principales: el backend y el frontend.
+	•	Autenticación de usuarios (login/registro)
+	•	Gestión de perfiles
+	•	Añadir, editar y eliminar mascotas
+	•	Crear, editar y eliminar publicaciones
+	•	Diseño responsivo con una interfaz moderna
 
-### Backend
+Tecnologías Usadas
 
-El backend está construido con Node.js y Express. Se encarga de gestionar las peticiones de la API, la autenticación de usuarios, y la interacción con la base de datos.
+	•	Frontend: React, Material-UI, React Router, Axios, React Query
+	•	Backend: Node.js, Express, Sequelize, PostgreSQL
+	•	Autenticación: JWT (JSON Web Tokens)
+	•	Estilos: CSS, Material-UI
 
-#### Estructura del Backend
+Rutas de la API
 
-backend/
-├── controllers/
-├── models/
-├── routes/
-├── middlewares/
-├── utils/
-├── config/
-├── tests/
-├── .env
-├── app.js
-├── server.js
-├── package.json
+Autenticación
 
+	•	POST /auth/register - Registra un nuevo usuario
+	•	POST /auth/login - Inicia sesión con un usuario existente
 
-### Frontend
+Usuarios
 
-El frontend está construido con React. Se encarga de la interfaz de usuario y de interactuar con la API del backend.
+	•	GET /user/:userId - Obtiene detalles del usuario
+	•	PUT /user/:userId - Actualiza detalles del usuario
 
-#### Estructura del Frontend
+Mascotas
 
-frontend/
-├── public/
-├── src/
-│ ├── components/
-│ ├── pages/
-│ ├── services/
-│ ├── context/
-│ ├── hooks/
-│ ├── utils/
-│ ├── App.js
-│ ├── index.js
-│ ├── routes.js
-├── .env
-├── package.json
+	•	GET /pets - Obtiene todas las mascotas del usuario conectado
+	•	POST /pets - Añade una nueva mascota
+	•	PUT /pets/:id - Actualiza una mascota
+	•	DELETE /pets/:id - Elimina una mascota
 
+Publicaciones
 
+	•	GET /posts - Obtiene todas las publicaciones
+	•	POST /posts - Añade una nueva publicación
+	•	PUT /posts/:id - Actualiza una publicación
+	•	DELETE /posts/:id - Elimina una publicación
+
+    ¡Espero que disfrutes usando PETinder tanto como nosotros disfrutamos creándolo! 🐶😸

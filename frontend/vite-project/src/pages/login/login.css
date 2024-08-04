@@ -1,5 +1,5 @@
 .login {
-  height: 100vh;
+  height: 60vh;
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
 .login .card {
   width: 50%;
   display: flex;
-  background-color: rgb(253, 188, 188);
+  background-color: rgba(0, 201, 255, 0.75);
   border-radius: 10px;
   min-height: 600px;
   overflow: hidden;
@@ -18,9 +18,7 @@
 .login .card .left {
   flex: 1;
   background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-    url(
-      "https://img.freepik.com/foto-gratis/retrato-divertido-lindo-cachorro-perro-husky-siberiano-pie-contra-placa-plata-agua-o-comida-perrito-gracioso-ojos-azules-pelaje-gris-negro_7502-5602.jpg?t=st=1722709239~exp=1722712839~hmac=947aad2ecb802c85dbbf36867589f4c954d1d1ff2babb5672f7d883cc350b083&w=900"
-      )
+    url("https://img.freepik.com/foto-gratis/retrato-divertido-lindo-cachorro-perro-husky-siberiano-pie-contra-placa-plata-agua-o-comida-perrito-gracioso-ojos-azules-pelaje-gris-negro_7502-5602.jpg?t=st=1722709239~exp=1722712839~hmac=947aad2ecb802c85dbbf36867589f4c954d1d1ff2babb5672f7d883cc350b083&w=900")
       center;
   background-size: cover;
   padding: 50px;
@@ -28,13 +26,14 @@
   flex-direction: column;
   gap: 30px;
   color: white;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .login .card .left h1 {
+  margin: 0;
   font-size: 60px;
-  line-height: 100px; 
+  line-height: 100px;
 }
 
 .login .card .left p {
@@ -46,8 +45,8 @@
 }
 
 .login .card .left button {
-  width: 100%; 
-  max-width: 300px; 
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   border: none;
   background-color: white;
@@ -61,40 +60,45 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  gap: 30px; 
-  justify-content: center; 
-  align-items: center; 
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .login .card .right h1 {
-  color: #555; 
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .login .card .right form {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
-  align-items: center; 
+  gap: 20px;
+  align-items: center;
 }
 
 .login .card .right form label {
-  display: block; 
-  font-size: 16px; 
-  color: #938eef; 
-  margin-bottom: 5px; 
+  display: block;
+  font-size: 16px;
+  color: #938eef;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
 }
 
 .login .card .right form input {
   border: none;
   border-bottom: 1px solid lightgray;
   padding: 10px 5px;
-  width: 100%; 
-  max-width: 300px; 
+  width: 100%;
+  max-width: 300px;
 }
 
 .login .card .right form button {
-  width: 100%; 
-  max-width: 300px; 
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   border: none;
   background-color: #b7c9f2;
@@ -103,38 +107,30 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 767px) {
   .login .card {
-      width: 90%;
-      flex-direction: column;
+    width: 90%;
+    flex-direction: column;
   }
 
   .login .card .left h1 {
-      font-size: 60px;
-      line-height: 60px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
-
 @media (max-width: 479px) {
   .login .card .left h1 {
-      font-size: 40px;
-      line-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .login .card .left button,
   .login .card .right form button {
-      width: 100%;
+    width: 100%;
   }
 
   .login .card .right form input {
-      padding: 10px 5px;
+    padding: 10px 5px;
   }
 }
-
-
-
-
-
-

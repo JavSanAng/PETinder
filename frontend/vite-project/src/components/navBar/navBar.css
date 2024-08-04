@@ -1,5 +1,7 @@
+
+
 .navbar-icon {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 8px;
   display: flex;
   align-items: center;
@@ -30,8 +32,8 @@
     #ff4e50,
     #ff5f6d
   );
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+
   z-index: 1000;
 }
 
@@ -40,7 +42,10 @@
   color: inherit;
   margin: 0 8px;
 }
+.logo-img {
+  width: 50px;
+}
 
 .navbar-link:hover {
-  color: #5947c3;
+  color: #000000;
 }
