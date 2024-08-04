@@ -50,6 +50,7 @@
   color: rebeccapurple;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .register .card .right {

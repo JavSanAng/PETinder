@@ -24,7 +24,7 @@ const App = () => {
                     <Route path="/home" element={<Home />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/pets" element={<Pet />} />
-                    <Route path="/create-post" element={<CreatePost />} /> {/* Nueva ruta */}
+                    <Route path="/create-post" element={<CreatePost />} /> 
 
                 </Routes>
             </div>

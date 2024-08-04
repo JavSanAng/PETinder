@@ -1,182 +1,75 @@
 .user-posts-container {
-    margin-top: 24px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .user-posts-title {
-    margin-bottom: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 20px;
 }
 
-.post {
+.user-posts-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-post-card {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    padding-top: 0;
-    padding: 3%;
-    border: 1px solid #e0e0e0;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 24px auto; 
-    overflow: hidden;
-    width: 90%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.post:hover {
+.user-post-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 16px;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #fafafa;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 12px;
-    border: 2px solid #ddd;
-}
-
-.user-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.user-name {
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: 4px;
-}
-
-.post-date {
-    font-size: 0.9em;
-    color: #999;
-}
-
-.menu-icon {
-    cursor: pointer;
+.user-post-content {
+    font-size: 16px;
     color: #666;
-    transition: color 0.3s ease;
+    margin-bottom: 10px;
 }
 
-.menu-icon:hover {
-    color: #333;
+.user-post-date {
+    font-size: 14px;
+    color: #999;
+    text-align: right;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 768px) {
+    .user-posts-container {
+        padding: 40px;
+        margin-top: 20px;
+    }
+
+    .user-posts-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .user-post-content {
+        font-size: 18px;
+    }
+
+    .user-post-date {
+        font-size: 16px;
+    }
 }
 
-.edit-button,
-.delete-button {
-    background-color: #6200ea;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: background-color 0.3s ease;
-    width: 100px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.delete-button {
-    background-color: #e74c3c;
-}
-
-.edit-button:hover {
-    background-color: #3700b3;
-}
-
-.delete-button:hover {
-    background-color: #c0392b;
-}
-
-.post-content {
-    padding: 16px;
-    text-align: center;
-}
-
-.post-content p {
-    margin-bottom: 16px;
-    line-height: 1.6;
-    color: #444;
-    text-align: left;
-}
-
-.post-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 16px;
-    margin-top: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.post-image:hover {
-    transform: scale(1.05);
-}
-
-.edit-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.save-button,
-.cancel-button {
-    background-color: #6200ea;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-left: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.save-button:hover {
-    background-color: #3700b3;
-}
-
-.cancel-button {
-    background-color: #b00020;
-}
-
-.cancel-button:hover {
-    background-color: #790000;
-}
-
-.textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-top: 16px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}

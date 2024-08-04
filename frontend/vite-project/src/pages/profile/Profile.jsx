@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect, useContext } from "react";
 import { makeRequest } from "../../context/axios";
 import { AuthContext } from "../../context/authContext";
 import { Card, CardContent, Typography, Avatar, Grid, Container, Box, CircularProgress } from "@mui/material";
-// import UserPosts from "../../components/userPost/UserPosts"; 
+import UserPosts from "../../components/userPost/UserPosts";  
 import "./profile.css";
 
 const Profile = () => {
@@ -62,7 +63,9 @@ const Profile = () => {
                     })
                 );
 
-                setPets(petsWithImages);
+                // Filtrar las mascotas con el nombre "No pet name"
+                const filteredPets = petsWithImages.filter(pet => pet.pet_name !== "No pet name");
+                setPets(filteredPets);
             } catch (error) {
                 console.error("Error fetching pets:", error);
             }
@@ -102,7 +105,7 @@ const Profile = () => {
                     </Grid>
                 </CardContent>
             </Card>
-            {/* <UserPosts /> */}
+            <UserPosts userId={user.user_id} /> 
         </Container>
     );
 };

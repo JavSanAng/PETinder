@@ -1,20 +1,4 @@
 
-// import Posts from "../../components/posts/Posts"
-
-// import "./home.css"
-// const Home = () => {
-//   return (
-    
-//     <div className="home">
-//       <Posts />
-//     </div>
-//   )
-// }
-
-// export default Home; 
-
-// src/pages/home/Home.jsx
-
 import React, { useEffect, useState } from "react";
 import Posts from "../../components/posts/Posts";
 import WelcomeModal from "../../components/welcomeModal/WelcomeModal";

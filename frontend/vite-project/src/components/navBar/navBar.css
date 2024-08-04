@@ -47,5 +47,9 @@
 }
 
 .navbar-link:hover {
+  color: #fdfdfd;
+}
+
+.css-tzssek-MuiSvgIcon-root {
   color: #000000;
 }
